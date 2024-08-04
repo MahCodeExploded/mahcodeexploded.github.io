@@ -45,6 +45,7 @@ h1{font-family: Bahnschrift;
 
 p{display: none;}
 
+
 /*Styles avec bordures / sans bordures mais ombrage,à décider plus tard*/
 
 #checkboxNuit,.boutonAccueil, #box1, #box2, #box3, #box4,
@@ -80,6 +81,23 @@ Servira pour l'orientation de l'écran et le mode nuit*/
     --radiusMedium: 4vw;
     --radiusSmall : 3vw ;
     
+}
+
+/*Le titre*/
+
+#titre{
+    display: block;
+    z-index: 11;
+    grid-row: 1;
+    grid-column: 1;
+    font-family: Bahnschrift;
+    font-weight: bolder;
+    font-size:5em ;
+    align-self: center;
+    justify-self: center;
+    opacity: 1;
+    margin-top: -60vh;
+    transition: 0.5s;
 }
 
 /*Le bouton accueil*/
@@ -392,32 +410,32 @@ L'opacity ne fait que les rendre invisibles pour la suite, elles restent actives
     border: 1px solid var(--couleurBordure) ;
     align-self: center;
     justify-self: center;
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0px;
     
 }
 
 #imageContainer1{
-    content: url(../images/ProjPlaceholderA.png);
+    background-image: url(../images/ProjPlaceholderA.png);
     grid-row: 2;
     grid-column: 1;
-    object-fit: cover;
 }
 #imageContainer2{
-    content: url(../images/ProjPlaceholderB.png);
+    background-image: url(../images/ProjPlaceholderB.png);
     grid-row:3 ;
     grid-column: 2;
-    object-fit: cover;
 }
 #imageContainer3{
-    content: url(../images/ProjPlaceholderC.png);
+    background-image: url(../images/ProjPlaceholderC.png);
     grid-row: 4 ;
     grid-column: 1 ;
-    object-fit: cover;
 }
 #imageContainer4{
-    content: url(../images/ProjPlaceholderD.png);
+    background-image: url(../images/ProjPlaceholderD.png);
     grid-row: 5 ;
     grid-column: 2;
-    object-fit: cover;
 }
 
 
@@ -434,7 +452,9 @@ L'opacity ne fait que les rendre invisibles pour la suite, elles restent actives
 
 /*sur clic sur la checkbox invisible du bouton accueil,déploie les sous-catégories
 et leurs checkboxes invisibles, les rendant actives via "visibility" (mais elles sont 
-toujours invisibles car leur "opacity" reste à 0)*/
+toujours invisibles car leur "opacity" reste à 0). Le titre s'efface.*/
+
+#accueilCheck:checked ~ #titre {visibility: hidden; opacity: 0;}
 
 #accueilCheck:checked ~ #box1, #accueilCheck:checked ~ #boxcheck1{margin-top: var(--marge1Haut); visibility: visible;}
 
