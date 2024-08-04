@@ -11,9 +11,8 @@ Contient actuellement :
 
 Reste à faire :
 
-    -Section "plus" pour les détails sur les projets à venir.
+    -Sections individuelles sur chaque projet à venir.
     -plus d'animations une fois le Javascript appris.
     -ajout mode sombre (facile, il n'y a que trois couleurs différentes, il y aura juste besoin d'une checkbox et idéalement d'une variable).
-    -footer
 
 Création et maintien du site : M. F.
