@@ -92,7 +92,7 @@ Servira pour l'orientation de l'écran et le mode nuit*/
     grid-column: 1;
     font-family: Bahnschrift;
     font-weight: bolder;
-    font-size:5em ;
+    font-size:7vw ;
     align-self: center;
     justify-self: center;
     opacity: 1;
@@ -878,6 +878,10 @@ Penser à zoomer et décaler le bouton accueil dans la direction voulue*/
 
     }
 
+    #titre{
+        font-size: 7vh;
+
+    }
     #pageArticle1, #pageArticle2, #pageArticle3, #pageArticle4, #pageArticle5, #pageArticle6{
         font-size: 2vh;
     }
